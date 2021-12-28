@@ -27,6 +27,11 @@
             }
         }
 
+        public DomainModelState GetState()
+        {
+            return _currentState;
+        }
+
         public DomainModel()
         {
             _currentState = DomainModelState.Draft;

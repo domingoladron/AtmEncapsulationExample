@@ -5,6 +5,9 @@
     /// </summary>
     public interface IDomainModel
     {
+        public bool IsFinalState { get; }
         public void ChangeState(DomainModelState state);
+        public DomainModelState GetState();
+
     }
 }

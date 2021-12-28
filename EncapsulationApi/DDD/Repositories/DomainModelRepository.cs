@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using EncapsulationApi.DDD.DomainModels;
 
 namespace EncapsulationApi.DDD.Repositories
@@ -16,6 +17,9 @@ namespace EncapsulationApi.DDD.Repositories
 
         public async Task SaveDomainModel(IDomainModel model)
         {
+            Console.WriteLine($"The model state is {model.GetState()}");
+            var finalStateYesOrNo = (model.IsFinalState) ? "true":"false";
+            Console.WriteLine($"The model is in a final state?  {finalStateYesOrNo}");
             // Do something with the Domain Model, save it, send it somewhere, etc.
             await Task.CompletedTask;
         }
