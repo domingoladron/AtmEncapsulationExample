@@ -19,6 +19,7 @@ namespace AtmEncapsulationExample
 
         private static void CallGoodAtmMachine()
         {
+            //Call a factory to get back our atm interface implementation
             var atmMachine = AtmMachineFactory.GetAtmMachine();
 
             atmMachine.Login(5555);
@@ -54,6 +55,7 @@ namespace AtmEncapsulationExample
 
             //Oh, so I don't have enough money, eh?  How's about I just add another bank account for myself
             // And give myself a WHOLE LOTTA Money
+            Console.WriteLine($"I'll create me a a new account with way too much money in it");
             var myAccount = new AccountInfo(5678, 1000000000000);
             atmMachine.ThisJerksAccounts.Add(myAccount);
 
@@ -63,11 +65,12 @@ namespace AtmEncapsulationExample
             // Now let's withdraw a bunch of money I shouldn't have access to touch
             var account = atmMachine.ThisJerksAccounts.Find(g => g.AccountNumber.Equals(5678));
             var dosh = account.Withdraw(500000);
-
+            Console.WriteLine($"I've just withdrawn money from a phony account I created and added to the ATM Machine!  Amount I withdrew: {dosh.Value}");
             //And finally, I'll just mess with the total amount of dosh in the machine
             atmMachine.TotalCashInTheMachine = new Dosh { CountryOfOrigin = "NZ", Value = -100000 };
+            Console.WriteLine($"I just put the ATM Machine into a negative balance!  Amount in the ATM Machine now: {atmMachine.TotalCashInTheMachine.Value}");
         }
 
-       
+
     }
 }

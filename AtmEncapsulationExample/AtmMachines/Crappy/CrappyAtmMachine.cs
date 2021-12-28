@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using AtmEncapsulationExample.AtmMachines.Good;
 
 namespace AtmEncapsulationExample.AtmMachines.Crappy
@@ -7,7 +6,7 @@ namespace AtmEncapsulationExample.AtmMachines.Crappy
 
 
     /// <summary>
-    /// Oue encapsulated ATM Machine
+    /// Our un-encapsulated ATM Machine
     /// </summary>
     public class CrappyAtmMachine 
     {
