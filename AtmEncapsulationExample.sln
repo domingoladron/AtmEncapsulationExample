@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AtmEncapsulationExample", "AtmEncapsulationExample\AtmEncapsulationExample.csproj", "{89AE09FD-CBF6-4357-826C-7E9BE3DDC3E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncapsulationApi", "EncapsulationApi\EncapsulationApi.csproj", "{5D24EDF0-BAFE-4345-BB6D-739B484E952B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89AE09FD-CBF6-4357-826C-7E9BE3DDC3E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89AE09FD-CBF6-4357-826C-7E9BE3DDC3E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89AE09FD-CBF6-4357-826C-7E9BE3DDC3E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89AE09FD-CBF6-4357-826C-7E9BE3DDC3E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D24EDF0-BAFE-4345-BB6D-739B484E952B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D24EDF0-BAFE-4345-BB6D-739B484E952B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D24EDF0-BAFE-4345-BB6D-739B484E952B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D24EDF0-BAFE-4345-BB6D-739B484E952B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E4F3C47-9207-4FCC-8FEF-F42121423076}
+	EndGlobalSection
+EndGlobal
