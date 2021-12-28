@@ -16,11 +16,12 @@ namespace EncapsulationApi.DDD.Repositories
         }
 
         public async Task SaveDomainModel(IDomainModel model)
-        {
+        { 
+            // Do something with the Domain Model, save it, send it somewhere, etc.
             Console.WriteLine($"The model state is {model.GetState()}");
             var finalStateYesOrNo = (model.IsFinalState) ? "true":"false";
             Console.WriteLine($"The model is in a final state?  {finalStateYesOrNo}");
-            // Do something with the Domain Model, save it, send it somewhere, etc.
+           
             await Task.CompletedTask;
         }
 
